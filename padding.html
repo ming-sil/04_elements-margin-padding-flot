@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여백_padding</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box{
+            width: 300px;
+            height: 300px;
+            font-size: 30px;
+            text-align: center;
+            line-height: 300px;
+            background-color: gold;
+            border: 5px solid black;
+        }
+
+        .box_1{
+            /* padding: 100px; */
+           
+            /* padding-top: 100px;
+            padding-right: 50px;
+            padding-bottom: 50px;
+            padding-left: 30px; */
+            /* =>padding: 100px 50px 50px 30px; */
+
+            padding: 50px 100px;
+            box-sizing: border-box;
+            /* =>패딩에 박스사이징을 적용하면 밖으로 확장이아닌 안쪽으로 밀려들어감 */
+            
+            /* =>패딩은 auto 없음 */
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <!-- *여백
+    2.padding 
+    =>엘리먼트의 기본크기에서 넣은 값 만큼 확장됨-->
+    
+    <div class="box box_1" >1번 박스</div>
+    <div class="box">2번 박스</div>
+
+</body>
+</html>

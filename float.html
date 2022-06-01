@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box_wrap{
+            width: 600;
+            height: 200;
+            background-color: lightgray;
+            float: right;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: teal;
+            font-size: 30px;
+            text-align: center;
+            line-height: 200px;
+            border: 5px solid black;
+            box-sizing: border-box;
+            color: #fff;
+            float: left
+            /* =>블럭요소의 기본 여백값을 제거하고 왼쪽, 오른쪽으로 정렬됨 */
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="box_wrap">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+</body>
+</html>

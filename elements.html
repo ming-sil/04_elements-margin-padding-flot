@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>element</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* 
+        =>*은 전체 선택자, 우선순위가 제일 낮음
+        =>html은 기본적 여백값이 있으므로 css작업할때 초기화작업하고 시작해야함 */
+
+        .block{
+            width: 200px;
+            height: 200px;
+            border: 5px solid salmon;
+            font-size: 20px;
+            text-align: center;
+            /* line-height: 200px; */
+            display: inline;
+            /* 
+            =>엘리먼트의 요소값을 변경할 수 있음
+            =>block, inline, none, flex */
+            box-sizing: border-box;
+        }
+
+         a{
+            width: 200px;
+            height: 200px;
+            border: 5px solid salmon;
+            font-size: 20px;
+            text-align: center;
+            line-height: 200px;
+            display: block;
+            box-sizing: border-box;
+         }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="block">
+        블럭요소
+    </div>
+    <div class="block">
+        블럭요소
+    </div>
+
+    <a href="#">인라인 요소</a>
+    <a href="#">인라인 요소</a>
+    <!-- 
+    =>a태그 링크의 #은 임시링크라고 함
+    =>임시링크는 클릭하면 페이지 제일 윗쪽으로 올라감 -->
+
+</body>
+</html>

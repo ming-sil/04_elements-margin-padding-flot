@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>과제1</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box_wrap{
+            width: 1400px;
+            height: 500px;
+            /* background-color: lightgrey; */
+            margin: 0 auto
+        }
+
+        .box{
+            width: 433.33333px;
+            height: 100%;
+            /* =>부모의 세로값이 반드시 px로 지정 되어있을 때 자식의 높이값을 %로 적용할 수 있음 */
+            background-color: salmon;
+            float: left;
+            margin-left: 50px;
+        }
+
+        .box_1{
+            margin-left: 0;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="box_wrap">
+        <div class="box box_1"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+</body>
+</html>
